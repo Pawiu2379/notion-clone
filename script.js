@@ -4,8 +4,10 @@ function createCalendar(calendar, year, month) {
     var daysOfMonth = new Date(year, month+1, 0).getDate();
     var firstDayOfMonth = new Date(year, month, 1).getDay();
     var weeksInMonth = Math.ceil((daysOfMonth + firstDayOfMonth)/7);
+    const months = ['Styczeń', 'Luty','Marzec','Kwiecień','Maj','Czerwiec','Lipiec','Sierpień','Wrzesień','Październik','Listopad','Grudzień']
 
-    var calendarBody = '<table>';
+    var calendarBody = '<table id="calendar-table">';
+    calendarBody += '<caption>' + months[currentDate.getMonth()].toString() + '</caption>'
     calendarBody += '<tr><th>Nd</th><th>Pn</th><th>Wt</th><th>Śr</th><th>Cz</th><th>Pt</th><th>So</th></tr>';
 
     var dayOfMonth = 1;
