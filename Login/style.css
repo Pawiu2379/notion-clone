@@ -1,0 +1,80 @@
+header{
+    background-color: gray;
+    border-radius: 15px;
+    color: white;
+    
+}
+header h2{
+    margin: 10px;
+    padding: 10px;
+}
+
+body{
+    background-color: #dee0df;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    text-align: center;
+
+}
+
+section{
+    border-radius: 10px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);     
+}
+
+form{
+    text-align: left;
+    padding-left: 30px ;
+    background-color: lightgray;
+    border: 1px solid grey;
+    border-radius: 10px ;
+}
+.signData{
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+}
+
+form input{
+    background-color: lightgray;
+    border-radius: 15px;
+}
+form h2{
+    border-bottom: 1px sold gray;
+}
+
+.inputs{
+    font-size: 20px;
+}
+
+#links{
+    margin: 10px;
+}
+#country {
+    border: 2px solid grey;
+    background-color: lightgray;
+    border-radius: 15px;
+}
+a{
+    padding: 20px;
+    color: white;
+    background-color: grey;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+#submit{
+    font-size: larger;
+    color: white;
+    background-color: grey;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 10px;   
+}

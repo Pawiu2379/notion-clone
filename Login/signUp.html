@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawel Koc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Fill information's</h2>
+    </header>
+    <section class="signUp">
+        <form action="signUp.php" method="post">
+            <h3>Your Personal Information</h3>
+            <label class="signData"  for="name">Name
+                <input type="text" id="name" name="name"></label><br>
+            <label class="signData"  for="secondName">Last Name:
+                <input type="text" id="secondName" name="secondName"></label><br>
+            <label class="signData" for="password">password:
+                <input type="password" id="password" name="password" ></label><br>
+
+            <label class="signData"  for="phone">Phone:
+                <input type="number" id="phone" name="phone"></label><br>
+            <input type="submit" id="submit" value="Submit">
+        </form><br>
+        
+        <a href="changePassword.html">nie pamietam hasła</a>
+        <a href="index.html">Zaloguj sie</a>
+    </section>
+</body>
+</html>

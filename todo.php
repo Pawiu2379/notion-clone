@@ -1,4 +1,7 @@
 <?php
+    session_start();
+    $id = $_SESSION['username'];
+
     $servername = 'localhost';
     $user = 'root';
     $password = '';
@@ -14,7 +17,7 @@
 
     $sql = 'SELECT * FROM tasks WHERE id_user = $id';
 
-    $result = mysqli_query($conn, $sql)
+    $result = mysqli_query($conn, $sql);
 
 
     while($row = mysqli_fetch_array($result)){
