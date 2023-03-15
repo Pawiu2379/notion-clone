@@ -2,7 +2,7 @@
     font-family: Consolas, sans-serif;
 }
 header{
-    height: 40px;
+
 }
 ul {
     list-style-type: none;
@@ -66,6 +66,27 @@ td {
     border: white 1px;
     box-shadow: 5px 5px 5px 5px gray;
 }
+
+section{
+    justify-items: auto;
+}
+
+.buttons{
+    display: inherit;
+    justify-items: center;
+}
+.button {
+    display: inherit;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.button:hover {
+    background-color: #555555;
+    color: white;
+}
+
 
 textarea{
     width: 80%;

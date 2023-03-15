@@ -3,32 +3,45 @@ try {
 
 
 //    $id = $_SESSION['id'];
+    $id = $_SESSION['id'];
 
     $servername = 'localhost';
     $user = 'root';
     $password = '';
     $dbname = 'planer';
 
-    $id = 1;
-
-    $conn = mysqli_connect($servername, $user, $password, $dbname);
+    $conn = mysqli_connect($servername,$user,$password,$dbname);
 
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    $sql = 'SELECT * FROM tasks WHERE id_user = $id';
+    $sql = "SELECT * FROM tasks WHERE id_user = '$id'";
 
     $result = mysqli_query($conn, $sql);
 
+    if ($result->num_rows > 0) {
+        echo "<table>";
+        echo "<tr><th>Status</th><th>Zadanie</th><th>Data</th></tr>";
 
-    while ($row = mysqli_fetch_array($result)) {
-        if ($row['status']) {
-            echo '';
+        while($row = $result->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td><input type='checkbox' name='status' value='" . $row["status"] . "'></td>";
+            echo "<td>" . $row["task"] . "</td>";
+            echo "<td>" . $row["date"] . "</td>";
+            echo "</tr>";
         }
+
+        echo "</table>";
+    } else {
+        echo "Brak danych do wyświetlenia";
     }
+
+
+    mysqli_close($conn);
 }catch(Exception $e){
     echo "<h2 class='error_php' > To do list is not available now</h2>";
     echo "<script> console.log". $e ->getMessage(). "</script>";
 }
 ?>
+

@@ -1,7 +1,6 @@
 <?php
-    session_start();
-    ?>
-
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -43,12 +42,16 @@
                 header("Location: ../index.html");
             }else{
                 echo '<script>alert("Podane hasło jest nie prawidłowe")</script>';
+                header('Location: index.php');
             };
         }else{
             echo '<script>alert("Podane hasło jest nie prawidłowe")</script>';
+            header('Location: index.php');
         };
     }else{
         echo '<script>alert("Podany login nie istnieje spróbuje jeszcze raz albo zarejestruj sie")</script>';
+        header('Location: signUp.html');
+
     };
 
     mysqli_close($connection);

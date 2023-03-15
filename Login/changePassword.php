@@ -31,7 +31,7 @@
         $result = mysqli_query($connection,$sql);
 
         echo "<script>alert('Twoje hasło zostało zmienione')</script>";
-        header("Location: index.html");
+        header("Location: index.php");
     }else{
         echo "Podane hasła sie nie zgadzają";
         echo "<a href='changePassword.html'>Powrót</a>";

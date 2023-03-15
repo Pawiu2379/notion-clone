@@ -1,20 +1,14 @@
 <?php
-session_start();
-//$id = $_SESSION['id'];
+    session_start();
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Planer</title>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-
     <header>
         <nav>
             <ul>
@@ -28,9 +22,8 @@ session_start();
     <main>
         <section id="todo_shortcut" class="shortcut">
             <h1>To Do</h1>
-            <div class="to-do ">
-                <?php include 'todo.php'?>
-            </div>
+            <div class ="todo">
+                <?php include 'todo.php'; ?>
         </section>
         <section id="calendar_shortcut" class="shortcut">
             <h1>Calendar</h1>
