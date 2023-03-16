@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    ?>
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -9,7 +13,6 @@
 </head>
 <body>
 <?php
-    session_start();
     $login = $_POST['login'];
     $password = $_POST['password'];
 
@@ -24,8 +27,8 @@
     if (!$connection) {
         die("Connection failed: " . mysqli_connect_error());
     }
-    $sql = "SELECT login FROM $tablename WHERE login = '$login';";
-    $sql1 = "SELECT password FROM $tablename WHERE password ='$password';";
+    $sql = "SELECT * FROM $tablename WHERE login = '$login';";
+    $sql1 = "SELECT * FROM $tablename WHERE password ='$password';";
 
     $result = mysqli_query($connection,$sql);
 
@@ -36,6 +39,7 @@
             $db_pssword = $row['password'];
             if($password == $db_pssword){
                 $_SESSION['ID'] = $row['id'];
+                $_SESSION['username'] = $row['name'];
                 header("Location: ../index.html");
             }else{
                 echo '<script>alert("Podane hasło jest nie prawidłowe")</script>';

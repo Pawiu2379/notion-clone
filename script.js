@@ -34,12 +34,13 @@ function createCalendar(calendar, year, month) {
     calendar.innerHTML = calendarBody;
 }
 
-
-
-
-
 var calendar = document.getElementById('calendar');
 var currentDate = new Date();
 createCalendar(calendar, currentDate.getFullYear(), currentDate.getMonth());
 
+function resetTextArea() {
+    document.getElementById("myTextArea").value = "";
+}
 
+
+document.getElementById('reset').addEventListener('click',resetTextArea)
