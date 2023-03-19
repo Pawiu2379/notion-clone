@@ -4,12 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d504e88-e085-4c79-8137-ca31f76c9f8c" name="Changes" comment="first day of work">
-      <change beforePath="$PROJECT_DIR$/Login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Login/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+    <list default="true" id="8d504e88-e085-4c79-8137-ca31f76c9f8c" name="Changes" comment="next weekend with smth done">
+      <change afterPath="$PROJECT_DIR$/changePassword.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/changePassword.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logged/functions/remove-note.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logged/functions/save-note.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logged/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logged/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logged/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logged/todo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signUp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signUp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b980e3c6-9693-4d26-a570-51728f7abd59.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b980e3c6-9693-4d26-a570-51728f7abd59.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/planerr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/planerr.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/changePassword.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/changePassword.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/signUp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/signUp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/todo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +51,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,6 +71,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -61,10 +84,21 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/notion-clone/logged/index.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -78,6 +112,11 @@
       <workItem from="1678957073965" duration="361000" />
       <workItem from="1678957785885" duration="853000" />
       <workItem from="1678958651626" duration="2486000" />
+      <workItem from="1679074392353" duration="750000" />
+      <workItem from="1679076387387" duration="169000" />
+      <workItem from="1679231909835" duration="2227000" />
+      <workItem from="1679238858114" duration="5012000" />
+      <workItem from="1679253944617" duration="5242000" />
     </task>
     <task id="LOCAL-00001" summary="first day of work">
       <created>1678783181116</created>
@@ -93,7 +132,9 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first day of work" />
-    <option name="LAST_COMMIT_MESSAGE" value="first day of work" />
+    <MESSAGE value="next weekend with smth done" />
+    <option name="LAST_COMMIT_MESSAGE" value="next weekend with smth done" />
   </component>
 </project>

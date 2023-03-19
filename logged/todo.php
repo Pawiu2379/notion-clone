@@ -26,7 +26,7 @@ try {
 
         while($row = $result->fetch_assoc()) {
             echo "<tr>";
-            echo "<td><input type='checkbox' name='status' value='" . $row["status"] . "'></td>";
+            echo "<td><label for='status'></label><input class='status' type='checkbox' name='status' value='" . $row["status"] . "'></td>";
             echo "<td>" . $row["task"] . "</td>";
             echo "<td>" . $row["date"] . "</td>";
             echo "</tr>";
@@ -38,10 +38,10 @@ try {
     }
 
 
-    mysqli_close($conn);
+
 }catch(Exception $e){
     echo "<h2 class='error_php' > To do list is not available now</h2>";
     echo "<script> console.log". $e ->getMessage(). "</script>";
 }
+mysqli_close($conn);
 ?>
-

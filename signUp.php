@@ -40,7 +40,7 @@
         header("Location: index.php");
         echo "<script>console.log('New record created successfully')</script>";
     } else {
-        echo "<script>console.log('Error: " . $sql . "<br>" . mysqli_error($connection) + "')<script>";
+        echo "<script>console.log('Error: " . $sql . "<br>" . mysqli_error($connection) . "')<script>";
     }
 
     mysqli_close($connection);

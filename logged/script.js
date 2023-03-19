@@ -20,9 +20,9 @@ function createCalendar(calendar, year, month) {
                 calendarBody += '<td></td>';
             } else {
                 if (dayOfMonth === currentDate.getDate() && year === currentDate.getFullYear() && month === currentDate.getMonth()) {
-                    calendarBody += '<td class="current-day">' + dayOfMonth + '</td>';
+                    calendarBody += `<td class="current-day" id="${dayOfMonth}">` + dayOfMonth + '</td>';
                 } else {
-                    calendarBody += '<td>' + dayOfMonth + '</td>';
+                    calendarBody += `<td id="${dayOfMonth}">` + dayOfMonth + '</td>';
                 }
                 dayOfMonth++;
             }
@@ -39,8 +39,27 @@ var currentDate = new Date();
 createCalendar(calendar, currentDate.getFullYear(), currentDate.getMonth());
 
 function resetTextArea() {
-    document.getElementById("myTextArea").value = "";
+    document.getElementById("notes").value = "Write a note...";
+    document.getElementById("title").value = "Set Title"
 }
 
+const saveNoteLink = document.getElementById('save-note');
+saveNoteLink.addEventListener('click', function(e) {
+    e.preventDefault(); // Uniemożliwienie wykonania domyślnej akcji, czyli przejścia do adresu w atrybucie "href"
+    const url = saveNoteLink.getAttribute('data-href');
+    window.location.href = url; // Przekierowanie użytkownika do wskazanego adresu
+});
 
-document.getElementById('reset').addEventListener('click',resetTextArea)
+
+function saveNote() {
+    var title = document.getElementById("title").value;
+    var notes = document.getElementById("notes").value;
+
+    var formData = new FormData();
+    formData.append("title", title);
+    formData.append("notes", notes);
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "/functions/save-note.php");
+    xhr.send(formData);
+}
