@@ -1,6 +1,7 @@
 <?php
     session_start();
 //    include './functions/save-note.php';
+    error_reporting(E_ERROR | E_PARSE);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +20,7 @@
                 <li><a>Calendar </a></li>
                 <li> <a>To do </a></li>
                 <li> <a>Notes </a></li>
-                <li> <a style="align-items: center" >Hello <?php echo $_SESSION['username']?></a></li>
+                <li> <a id="hello" style="text-align:center" >Hello <?php echo $_SESSION['username']?></a></li>
                 <li style="float: right"> <a>Search</a> </li>
             </ul>
         </nav>

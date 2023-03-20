@@ -1,80 +1,100 @@
-header{
-    background-color: gray;
-    border-radius: 15px;
-    color: white;
-    
-}
-header h2{
-    margin: 10px;
-    padding: 10px;
+/* Resetowanie stylów dla elementów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: #dee0df;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: block;
-    text-align: center;
-
+/* Stylowanie elementu body */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f2f2f7;
+    color: #333;
 }
 
-section{
-    border-radius: 10px;
-    padding: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);     
-}
-
-form{
-    text-align: left;
-    padding-left: 30px ;
-    background-color: lightgray;
-    border: 1px solid grey;
-    border-radius: 10px ;
-}
-.signData{
-    display: grid;
-    grid-template-columns: 40% 50% 10%;
-}
-
-form input{
-    background-color: lightgray;
-    border-radius: 15px;
-}
-form h2{
-    border-bottom: 1px sold gray;
-}
-
-.inputs{
-    font-size: 20px;
-}
-
-#links{
-    margin: 10px;
-}
-#country {
-    border: 2px solid grey;
-    background-color: lightgray;
-    border-radius: 15px;
-}
-a{
+/* Stylowanie elementu header */
+header {
+    background-color: #000;
+    color: #fff;
     padding: 20px;
-    color: white;
-    background-color: grey;
-    text-decoration: none;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 10px;
 }
-#submit{
-    font-size: larger;
-    color: white;
-    background-color: grey;
-    text-decoration: none;
-    padding: 5px;
-    border: 1px solid grey;
+
+/* Stylowanie elementu h2 w headerze */
+header h2 {
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Stylowanie sekcji logowania */
+.login {
+    background-color: #fff;
     border-radius: 10px;
-    margin: 10px;   
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+}
+
+/* Stylowanie etykiety i pola do wprowadzania danych */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="password"],input[type="number"] {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Stylowanie przycisku Submit */
+input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Stylowanie linków */
+#links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#links a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+}
+
+#links a:hover {
+    color: #000;
 }

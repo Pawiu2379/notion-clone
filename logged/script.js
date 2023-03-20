@@ -51,15 +51,3 @@ saveNoteLink.addEventListener('click', function(e) {
 });
 
 
-function saveNote() {
-    var title = document.getElementById("title").value;
-    var notes = document.getElementById("notes").value;
-
-    var formData = new FormData();
-    formData.append("title", title);
-    formData.append("notes", notes);
-
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "/functions/save-note.php");
-    xhr.send(formData);
-}

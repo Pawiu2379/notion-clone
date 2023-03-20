@@ -1,66 +1,90 @@
-*{
-    font-family: Consolas, sans-serif;
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f7f7f7;
+    color: #333333;
 }
 
-header{
-
-}
-ul {
-    display: grid;
-    grid-template-columns: 10% 10% 10% 60% 10%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    border-radius: 10px;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+a {
+    color: #333333;
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
+a:hover {
+    color: #555555;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+nav ul {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 10% 10% 10%  60% 10%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #dddddd;
+}
+#hello{
+    color: white;
+}
+
+/* Main Styles */
 main {
     display: grid;
     grid-template-columns: 30% 40% 30%;
     justify-items: center;
+    margin: 20px;
 }
 
-.shortcut{
-    margin-top: 40px;
-    width: 550px;
-    height: 150%;
-    font-size: 30px;
-    display: inline-block;
+.shortcut {
     justify-content: center;
     text-align: center;
-    border-radius: 50px;
-    -webkit-box-shadow: 4px 3px 8px 4px #969696;
+    align-items: center;
+    width: 90%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
 }
+
 .current-day{
     background-color: #111111;
     color: white;
-    border-radius: 20%;
+    border-radius: 15px;
 
 }
+
 table{
+    width: 100%;
+    height: 100%;
     padding: 10px;
     border-radius: 10%;
 }
 td {
-    border-radius: 20%;
+    border-radius: 15px;
     padding: 10px;
     transition-delay: 0.5s;
     transition: box-shadow 0.3s ease-in-out
@@ -73,50 +97,81 @@ td {
     box-shadow: 5px 5px 5px 5px gray;
 }
 
-section{
-    justify-items: auto;
+
+.todo {
+    margin-bottom: 20px;
 }
 
-.buttons{
-    width: auto;
-    display: inherit;
-    justify-items: center;
-}
 .button {
-    display: inherit;
-    background-color: white;
-    color: black;
-    border: 2px solid #555555;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 10px;
+    text-align: center;
+    width: 50px;
 }
 
 .button:hover {
-    background-color: #555555;
-    color: white;
+    background-color: #dddddd;
 }
 
-#title{
-    width: 80%;
-    padding: 15px;
-    border: solid 1px black;
-    border-radius:15px;
-    resize: none;
-}
-textarea {
-    width: 80%;
-    padding: 15px;
-    border: solid 1px black;
-    border-radius: 15px;
-    resize: none;
-}
-.buttons-notepad{
-    }
-.button{
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px  ;
-    display: inline-block;
-    border: solid 1px gray;
-    border-radius: 10%;
-    -webkit-box-shadow: 4px 3px 8px 1px #969696;
+#new-task {
+    color: #3cb371;
 }
 
+#remove-task {
+    color: #ff6347;
+}
+
+#edit-task {
+    color: #ffa500;
+}
+
+.calendar {
+    margin: auto;
+    width: 80%;
+}
+
+.notepad {
+    margin-bottom: 20px;
+}
+
+.note-title {
+    border: none;
+    border-bottom: 1px solid #333333;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+#notes {
+    border: none;
+    border-top: 1px solid #333333;
+    font-size: 16px;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+}
+
+.buttons-notepad {
+    text-align: right;
+}
+
+#add-note {
+    color: #3cb371;
+}
+
+#save-note {
+    color: #4b0082;
+}
+
+#reset-note {
+    color: #ff6347;
+}
