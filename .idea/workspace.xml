@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d504e88-e085-4c79-8137-ca31f76c9f8c" name="Changes" comment="next weekend with smth done">
+    <list default="true" id="8d504e88-e085-4c79-8137-ca31f76c9f8c" name="Changes" comment="working notepad">
+      <change afterPath="$PROJECT_DIR$/logged/subpages/calendar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logged/subpages/notes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logged/subpages/todo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/b980e3c6-9693-4d26-a570-51728f7abd59.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b980e3c6-9693-4d26-a570-51728f7abd59.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_03_2023_09_56__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_03_2023_09_56__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logged/functions/save-note.php" beforeDir="false" afterPath="$PROJECT_DIR$/logged/functions/save-note.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logged/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/logged/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logged/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/logged/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logged/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/logged/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logged/todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/logged/todo.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +107,8 @@
       <workItem from="1679238858114" duration="5012000" />
       <workItem from="1679253944617" duration="5850000" />
       <workItem from="1679321034414" duration="81000" />
-      <workItem from="1679324128916" duration="1127000" />
+      <workItem from="1679324128916" duration="1171000" />
+      <workItem from="1679335080259" duration="4173000" />
     </task>
     <task id="LOCAL-00001" summary="first day of work">
       <created>1678783181116</created>
@@ -120,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679259236950</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="working notepad">
+      <created>1679325286800</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679325286800</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +141,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first day of work" />
     <MESSAGE value="next weekend with smth done" />
-    <option name="LAST_COMMIT_MESSAGE" value="next weekend with smth done" />
+    <MESSAGE value="working notepad" />
+    <option name="LAST_COMMIT_MESSAGE" value="working notepad" />
   </component>
 </project>

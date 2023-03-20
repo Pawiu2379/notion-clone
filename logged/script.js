@@ -1,4 +1,8 @@
 //https://codepen.io/juan-patrick/pen/GRJWZmP
+
+
+
+
 function createCalendar(calendar, year, month) {
     var currentDate = new Date();
     var daysOfMonth = new Date(year, month+1, 0).getDate();
@@ -39,9 +43,8 @@ var currentDate = new Date();
 createCalendar(calendar, currentDate.getFullYear(), currentDate.getMonth());
 
 function resetTextArea() {
-    document.getElementById("notes").value = "Write a note...";
-    document.getElementById("title").value = "Set Title"
+    document.getElementById("notes").value = " ";
+    document.getElementById("title").value = " "
 }
-
 
 

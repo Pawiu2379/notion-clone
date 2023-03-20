@@ -17,9 +17,9 @@
     <header>
         <nav>
             <ul>
-                <li><a>Calendar </a></li>
-                <li> <a>To do </a></li>
-                <li> <a>Notes </a></li>
+                <li><a href="subpages/calendar.php">Calendar </a></li>
+                <li> <a href="subpages/todo.php">To do </a></li>
+                <li> <a href="subpages/notes.php">Notes </a></li>
                 <li> <a id="hello" style="text-align:center" >Hello <?php echo $_SESSION['username']?></a></li>
                 <li style="float: right"> <a>Search</a> </li>
             </ul>
@@ -33,14 +33,18 @@
                 <?php include 'todo.php'; ?>
             </div>
             <div>
-                <a class="button"  id="new-task"><ion-icon name="add-circle-outline"></ion-icon></a>
-                <a class="button" id="remove-task"><ion-icon name="close-circle-outline"></ion-icon></a>
-                <a class="button" id="edit-task"><ion-icon name="create-outline"></ion-icon></a>
+                <a href="subpages/todo.php" class="button" id="open-tasks"><ion-icon name="copy-outline"></ion-icon></ion-icon></a>
             </div>
         </section>
         <section id="calendar_shortcut" class="shortcut">
             <h1>Calendar</h1>
-            <div class="calendar " id="calendar">    </div>
+            <div class="calendar " id="calendar"></div>
+            <div id="event">
+
+            </div>
+            <div>
+                <a href="subpages/calendar.php" class="button" id="add-date"><ion-icon name="reader-outline"></ion-icon></a>
+            </div>
         </section>
         <section id="notes_shortcut" class="shortcut">
             <h1>Notes</h1>
@@ -49,12 +53,12 @@
                 <label for="title">
                 Fast Note:
                 </label>
-                <input type="text" name="title" value="Set title" id="title" class="note-title">
+                <input type="text" name="title"  id="title" class="note-title" placeholder="Set Title of your note">
                 <label for="notes">
-                </label><textarea autocomplete="off" id="notes" name="notes" rows="25" cols="50">Write a note ...</textarea>
+                </label><textarea autocomplete="off" id="notes" name="notes" rows="25" cols="50" placeholder="Write a note ..."></textarea>
                 <button type="submit" class="button" id="save-note" ><ion-icon name="save-outline"></ion-icon></button>
                 <button class="button" onclick="resetTextArea()" id="reset-note" ><ion-icon name="refresh-outline"></ion-icon></button>
-
+                <button class="button" id="open-notes" ><ion-icon name="bookmark-outline"></ion-icon></button>
             </form>
         </section>
     </main>

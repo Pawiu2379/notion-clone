@@ -26,7 +26,11 @@ try {
 
         while($row = $result->fetch_assoc()) {
             echo "<tr>";
-            echo "<td><label for='status'></label><input class='status' type='checkbox' name='status' value='" . $row["status"] . "'></td>";
+            if ($row['status'] == 1){
+                echo "<td><label for='status'></label><input class='status' type='checkbox' name='status' value='" . $row["status"] . "' checked></td>";
+            }else{
+                echo "<td><label for='status'></label><input class='status' type='checkbox' name='status' value='" . $row["status"] . "' ></td>";
+            }
             echo "<td>" . $row["task"] . "</td>";
             echo "<td>" . $row["date"] . "</td>";
             echo "</tr>";
