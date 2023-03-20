@@ -45,20 +45,17 @@
         <section id="notes_shortcut" class="shortcut">
             <h1>Notes</h1>
             <form action="functions/save-note.php" method="post">
-            <div class="notepad" id="notepad">
+
                 <label for="title">
                 Fast Note:
                 </label>
                 <input type="text" name="title" value="Set title" id="title" class="note-title">
                 <label for="notes">
                 </label><textarea autocomplete="off" id="notes" name="notes" rows="25" cols="50">Write a note ...</textarea>
-            </div>
-            <div class="buttons-notepad">
-                <a class="button"  id="add-note" ><ion-icon name="add-circle-outline"></ion-icon></a>
-                <a class="button" onclick="saveNote()" id="save-note" ><ion-icon name="save-outline"></ion-icon></a>
-                <a class="button" onclick="resetTextArea()" id="reset-note" ><ion-icon name="refresh-outline"></ion-icon></a>
-            </div>
-                </form>
+                <button type="submit" class="button" id="save-note" ><ion-icon name="save-outline"></ion-icon></button>
+                <button class="button" onclick="resetTextArea()" id="reset-note" ><ion-icon name="refresh-outline"></ion-icon></button>
+
+            </form>
         </section>
     </main>
 

@@ -43,11 +43,5 @@ function resetTextArea() {
     document.getElementById("title").value = "Set Title"
 }
 
-const saveNoteLink = document.getElementById('save-note');
-saveNoteLink.addEventListener('click', function(e) {
-    e.preventDefault(); // Uniemożliwienie wykonania domyślnej akcji, czyli przejścia do adresu w atrybucie "href"
-    const url = saveNoteLink.getAttribute('data-href');
-    window.location.href = url; // Przekierowanie użytkownika do wskazanego adresu
-});
 
 

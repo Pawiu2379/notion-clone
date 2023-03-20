@@ -1,32 +1,28 @@
-    <?php
+<?php
         session_start();
-        function savenote(){
-            $servername = 'localhost';
-            $user = 'root';
-            $password = '';
-            $dbname = 'planer';
 
-            $conn = mysqli_connect($servername, $user, $password, $dbname);
+        $host = "localhost";
+        $username = "root";
+        $password = "";
+        $database = "planer";
+        $conn = mysqli_connect($host, $username, $password, $database);
+        if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+        }
 
-            if (!$conn) {
-                die("Connection failed: " . mysqli_connect_error());
-            }
+        $title = $_POST["title"];
+        $notes = $_POST["notes"];
+        $user_id = $_SESSION['id'];
+        echo  $user_id;
 
-            $id = $_SESSION['id'];
-            $notes = $_POST['notes'];
-            $title = $_POST['title'];
+        $sql = "INSERT INTO notepad (`id_user`, `title`, `note`) VALUES ('$user_id', '$title', '$notes')";
+        if (mysqli_query($conn, $sql)) {
+        echo "Note saved successfully";
+        } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        }
 
 
-
-
-                $sql = "INSERT INTO notepad(`id_user`,`title`,`note`) VALUES ('$id','$title','$notes')";
-
-                mysqli_query($conn, $sql);
-
-                mysqli_close($conn);
-
-    }
-        savenote();
-
-        header("Location: ../index.php" );
-        exit();
+        mysqli_close($conn);
+        header("Location: ../index.php");
+        ?>
