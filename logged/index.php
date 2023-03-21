@@ -38,7 +38,9 @@
         </section>
         <section id="calendar_shortcut" class="shortcut">
             <h1>Calendar</h1>
-            <div class="calendar " id="calendar"></div>
+            <div class="calendar " id="calendar">
+                <?php include 'functions/create-calendar.php' ?>
+            </div>
             <div id="event">
 
             </div>
@@ -58,7 +60,7 @@
                 </label><textarea autocomplete="off" id="notes" name="notes" rows="25" cols="50" placeholder="Write a note ..."></textarea>
                 <button type="submit" class="button" id="save-note" ><ion-icon name="save-outline"></ion-icon></button>
                 <button class="button" onclick="resetTextArea()" id="reset-note" ><ion-icon name="refresh-outline"></ion-icon></button>
-                <button class="button" id="open-notes" ><ion-icon name="bookmark-outline"></ion-icon></button>
+                <a href="subpages/notes.php"  class="button" id="open-notes" ><ion-icon name="bookmark-outline"></ion-icon></a>
             </form>
         </section>
     </main>
