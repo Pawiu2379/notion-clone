@@ -50,6 +50,7 @@ nav a:hover {
 }
 
 main {
+
     display: grid;
     justify-items: center;
     margin: 20px;
@@ -94,75 +95,4 @@ main {
 #open-notes{
     color: #3cb371;
 
-}
-.note {
-    border-radius: 15px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    width: 90%;
-    height: 200px;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    display: grid;
-
-}
-.note:hover{
-    width: 90%;
-    height: 220px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
-}
-
-.notepad {
-    margin-bottom: 20px;
-}
-
-.note-title {
-    border: none;
-    border-bottom: 1px solid #333333;
-    font-size: 20px;
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 100%;
-}
-
-#notes {
-    border: none;
-    border-top: 1px solid #333333;
-    font-size: 16px;
-    padding: 10px;
-    resize: none;
-    width: 100%;
-}
-
-.buttons-notepad {
-    text-align: right;
-}
-
-#add-note {
-    color: #3cb371;
-}
-
-#save-note {
-    color: #4b0082;
-}
-
-#reset-note {
-    color: #ff6347;
-}
-
-input[type=number] {
-
-    border: 1px solid #333333;
-    font-size: 20px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 15px ;
-    width: 20%;
-}
-
-.all-notes{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
 }
