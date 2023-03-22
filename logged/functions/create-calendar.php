@@ -12,28 +12,33 @@ $calendarBody .= '<caption>' . $months[intval($month) - 1] . '</caption>';
 $calendarBody .= '<tr><th>Nd</th><th>Pn</th><th>Wt</th><th>Śr</th><th>Cz</th><th>Pt</th><th>So</th></tr>';
 
 $id = $_SESSION['id'];
+try {
+        
 
-$servername = 'localhost';
-$user = 'root';
-$password = '';
-$dbname = 'planer';
+    $servername = 'localhost';
+    $user = 'root';
+    $password = '';
+    $dbname = 'planer';
 
-$conn = mysqli_connect($servername, $user, $password, $dbname);
+    $conn = mysqli_connect($servername, $user, $password, $dbname);
 
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+
+
+    $sql = "SELECT * FROM tasks WHERE id_user = $id";
+    $result = mysqli_query($conn, $sql);
+
+    $dates = array();
+
+    while ($row = mysqli_fetch_assoc($result)) {
+        $dates[] = $row['date'];
+    }
+
+ }catch(Exception $e){
+    echo "<script> console.log". $e ->getMessage(). "</script>";
 }
-
-
-$sql = "SELECT * FROM tasks WHERE id_user = $id";
-$result = mysqli_query($conn, $sql);
-
-$dates = array();
-
-while ($row = mysqli_fetch_assoc($result)) {
-    $dates[] = $row['date'];
-}
-
 
 $dayOfMonth = 1;
 for ($i = 0; $i < $weeksInMonth; $i++) {

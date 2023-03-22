@@ -1,8 +1,5 @@
 <?php
 try {
-
-
-//    $id = $_SESSION['id'];
     $id = $_SESSION['id'];
 
     $servername = 'localhost';
