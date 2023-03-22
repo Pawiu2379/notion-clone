@@ -24,9 +24,10 @@ error_reporting(E_ERROR | E_PARSE);
         </ul>
     </nav>
 </header>
+<main>
 <section id="notes_shortcut" class="shortcut">
     <h1>Notes</h1>
-    <form action="../functions/save-note.php" method="post">
+    <form action="../functions/save-big-note.php" method="post">
 
         <label for="title">
             Fast Note:
@@ -34,7 +35,26 @@ error_reporting(E_ERROR | E_PARSE);
         <input type="text" name="title"  id="title" class="note-title" placeholder="Set Title of your note">
         <label for="notes">
         </label><textarea autocomplete="off" id="notes" name="notes" rows="25" cols="50" placeholder="Write a note ..."></textarea>
-        <button type="submit" class="button" id="save-note" ><ion-icon name="save-outline"></ion-icon></button>
-        <button class="button" onclick="resetTextArea()" id="reset-note" ><ion-icon name="refresh-outline"></ion-icon></button>
-    </form>
+        <button type="submit" class="button" id="save-note" ><ion-icon name="save-outline"></ion-icon>&nbsp; Save note</button>
+    </form><br>
+        <button class="button" onclick="resetTextArea()" id="reset-note" ><ion-icon name="refresh-outline"></ion-icon>&nbsp; Clear note</button>
 </section>
+    <section class="shortcut">
+        <h1>Wszystkie notatki</h1>
+        <div class="all-notes">
+        <?php include '../functions/all-notes.php'?>
+        </div>
+    </section>
+
+    <section class="shortcut">
+        <h1>Delete Note</h1>
+        <form action="../functions/remove-note.php" method="post">
+            <label for="delete">Choose number of note to delete:<br></label>
+                <input type="number" name="delete" id="delete"><br>
+            <button type="submit" class="button" id="save-note" ><ion-icon name="save-outline"></ion-icon>&nbsp; Delete note</button>
+        </form>
+    </section>
+</main>
+<script src="../script.js"></script>
+</body>
+</html>

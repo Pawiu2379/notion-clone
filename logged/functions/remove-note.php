@@ -1,5 +1,4 @@
 <?php
-    function removenote(){
 
             $servername = 'localhost';
             $user = 'root';
@@ -13,18 +12,16 @@
             }
 
             $id = $_SESSION['id'];
-            $note = $_POST['textarea'];
-            $title = $_POST['title'];
+
+            $noteid = $_POST['delete'];
 
 
-            $sql = "SELECT title, note from notepad where id_user = $id";
+            $sql = "DELETE FROM notepad where id=$noteid";
 
 
            $result = mysqli_query($conn, $sql);
-
-            while ($row = mysqli_fetch_array($result)){
-//           ----------------------------------------------------------------------------------------------------
-            }
+           if($result){
+               echo "usunięto pomyslnie";
+           }
             mysqli_close($conn);
-
-    }
+            header('Location: ../subpages/notes.php');
