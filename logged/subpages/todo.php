@@ -27,17 +27,20 @@ error_reporting(E_ERROR | E_PARSE);
 <main>
 <section id="todo_shortcut" class="shortcut">
             <h1>To Do</h1>
+        <form action="../subpages/todo.php" method="post">
             <label for="sort">
                 <select name="sort" id="sort">Sort By:
                     <option value="1">By date</option>
                     <option value="2">By status</option>
                 </select>
+                    <button class="button" type="submit"></button>
             </label>
-    <div class ="todo">
+        </form>
+            <div class ="todo">
                 <?php include '../functions/todo.php'; ?>
             </div>
             <div>
-                <a href="subpages/todo.php" class="button" id="open-tasks"><ion-icon name="copy-outline"></ion-icon></ion-icon></a>
+                <a href="../subpages/todo.php" class="button" id="open-tasks"><ion-icon name="copy-outline"></ion-icon></ion-icon></a>
             </div>
 </section>
 </main>

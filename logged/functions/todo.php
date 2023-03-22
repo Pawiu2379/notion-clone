@@ -6,14 +6,21 @@ try {
     $user = 'root';
     $password = '';
     $dbname = 'planer';
-
+    $wybraneOpcje = $_POST['opcje'];
     $conn = mysqli_connect($servername,$user,$password,$dbname);
-
+    $sql = "";
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
+    if($wybraneOpcje == 1){
+    $sql = "SELECT * FROM tasks WHERE id_user = '$id' ORDER BY date ASC";
 
-    $sql = "SELECT * FROM tasks WHERE id_user = '$id'";
+    }elseif($wybraneOpcje == 2){
+    $sql = "SELECT * FROM tasks WHERE id_user = '$id' ORDER BY status ASC";
+
+    }else{
+    $sql = "SELECT * FROM tasks WHERE id_user= $id";
+    }
 
     $result = mysqli_query($conn, $sql);
 
