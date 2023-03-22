@@ -1,6 +1,5 @@
 <?php
 session_start();
-//    include './functions/save-note.php';
 error_reporting(E_ERROR | E_PARSE);
 ?>
 <!DOCTYPE html>
@@ -25,3 +24,12 @@ error_reporting(E_ERROR | E_PARSE);
         </ul>
     </nav>
 </header>
+<section id="todo_shortcut" class="shortcut">
+            <h1>To Do</h1>
+            <div class ="todo">
+                <?php include '../functions/todo.php'; ?>
+            </div>
+            <div>
+                <a href="subpages/todo.php" class="button" id="open-tasks"><ion-icon name="copy-outline"></ion-icon></ion-icon></a>
+            </div>
+</section>

@@ -1,6 +1,5 @@
 <?php
 session_start();
-//    include './functions/save-note.php';
 error_reporting(E_ERROR | E_PARSE);
 ?>
 <!DOCTYPE html>

@@ -20,9 +20,9 @@ session_start();
     $db_password = "";
     $dbname = "planer";
     $tablename = "users";
-    // Create connection
+
     $connection = mysqli_connect($servername, $username, $db_password, $dbname);
-    // Check connection
+    
     if (!$connection) {
         die("Connection failed: " . mysqli_connect_error());
     }

@@ -1,25 +1,21 @@
-/* Resetowanie stylów dla elementów */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Stylowanie elementu body */
 body {
     font-family: 'Helvetica Neue', sans-serif;
     background-color: #f2f2f7;
     color: #333;
 }
 
-/* Stylowanie elementu header */
 header {
     background-color: #000;
     color: #fff;
     padding: 20px;
 }
 
-/* Stylowanie elementu h2 w headerze */
 header h2 {
     margin: 0;
     font-weight: bold;
@@ -27,7 +23,6 @@ header h2 {
     letter-spacing: 2px;
 }
 
-/* Stylowanie sekcji logowania */
 .login {
     background-color: #fff;
     border-radius: 10px;
@@ -37,7 +32,6 @@ header h2 {
     width: 300px;
 }
 
-/* Stylowanie etykiety i pola do wprowadzania danych */
 label {
     display: block;
     margin-bottom: 10px;
@@ -58,7 +52,6 @@ input[type="password"],input[type="number"] {
     font-size: 16px;
 }
 
-/* Stylowanie przycisku Submit */
 input[type="submit"] {
     background-color: #000;
     color: #fff;
@@ -79,7 +72,6 @@ input[type="submit"]:hover {
     color: #000;
 }
 
-/* Stylowanie linków */
 #links {
     display: flex;
     justify-content: space-between;
