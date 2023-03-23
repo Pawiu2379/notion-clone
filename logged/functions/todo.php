@@ -26,10 +26,11 @@ try {
 
     if ($result->num_rows > 0) {
         echo "<table>";
-        echo "<tr><th>Status</th><th>Zadanie</th><th>Data</th></tr>";
+        echo "<tr><th>Id</th><th>Status</th><th>Task</th><th>Date</th></tr>";
 
         while($row = $result->fetch_assoc()) {
             echo "<tr>";
+            echo  "<td>". $row['id'] . "</td>";
             if ($row['status'] == 1){
                 echo "<td><label for='status'></label><input class='status' type='checkbox' name='status' value='" . $row["status"] . "' checked></td>";
             }else{

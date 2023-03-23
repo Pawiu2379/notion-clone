@@ -27,15 +27,15 @@ error_reporting(E_ERROR | E_PARSE);
 <main>
 <section id="todo_shortcut" class="shortcut">
             <h1>To Do</h1>
-        <form action="../subpages/todo.php" method="post">
-            <label for="sort">
-                <select name="sort" id="sort">Sort By:
-                    <option value="1">By date</option>
-                    <option value="2">By status</option>
-                </select>
-                    <button class="button" type="submit"></button>
-            </label>
-        </form>
+            <form action="../subpages/todo.php" method="post" >
+                <label for="sort">
+                    <select name="sort" id="sort">Sort By:
+                        <option value="1">By date</option>
+                        <option value="2">By status</option>
+                    </select>
+                        <button class="button" type="submit"></button>
+                </label>
+            </form>
             <div class ="todo">
                 <?php include '../functions/todo.php'; ?>
             </div>
@@ -43,6 +43,24 @@ error_reporting(E_ERROR | E_PARSE);
                 <a href="../subpages/todo.php" class="button" id="open-tasks"><ion-icon name="copy-outline"></ion-icon></ion-icon></a>
             </div>
 </section>
+    <section class="shortcut" id="actions">
+        <form action="../functions/add-task.php" method="post">
+            <h1>New Task</h1>
+            <label for="task">Task
+                <textarea id="task"></textarea>
+            </label>
+            <label for="date"> End Date
+            <input type="date" id="date">
+            </label>
+            <button type="submit" class="button"><ion-icon name="add-circle-outline"></ion-icon>Add new</button>
+        </form>
+        <form action="../functions/remove-task.php" method="post">
+            <h1>Delete Task</h1>
+            <label for="delete">Choose id task to delete:<br></label>
+            <input type="number" name="delete" id="delete"><br>
+            <button type="submit" class="button" id="save-note" ><ion-icon name="save-outline"></ion-icon>&nbsp; Delete task</button>
+        </form>
+    </section>
 </main>
 </body>
 </html>

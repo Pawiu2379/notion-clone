@@ -71,8 +71,13 @@ main {
 
 
 .todo {
+
     margin-bottom: 20px;
+    display: grid;
+
+
 }
+
 
 .button {
     background-color: #ffffff;
@@ -88,11 +93,53 @@ main {
     text-align: center;
     width: 150px;
 }
-
 .button:hover {
     background-color: #dddddd;
 }
-#open-notes{
-    color: #3cb371;
 
+form{
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+input[type="text"],input[type="date"], input[type="number"] {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+#task{
+    height: 100px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    resize: none;
+
+}
+form label {
+    display: grid;
+    width: 200px;
+}
+
+#actions{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.todo{
+
+}
+
+table td{
+    padding: 5px ;
+    text-align: center  ;
 }
