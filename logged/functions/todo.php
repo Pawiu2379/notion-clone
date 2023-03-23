@@ -1,21 +1,23 @@
 <?php
 try {
     $id = $_SESSION['id'];
+    $sort = $_SESSION['sortby']
 
     $servername = 'localhost';
     $user = 'root';
     $password = '';
     $dbname = 'planer';
-    $wybraneOpcje = $_POST['opcje'];
     $conn = mysqli_connect($servername,$user,$password,$dbname);
     $sql = "";
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
-    if($wybraneOpcje == 1){
+
+    
+    if($sort == 1){
     $sql = "SELECT * FROM tasks WHERE id_user = '$id' ORDER BY date ASC";
 
-    }elseif($wybraneOpcje == 2){
+    }elseif($sort == 2){
     $sql = "SELECT * FROM tasks WHERE id_user = '$id' ORDER BY status ASC";
 
     }else{

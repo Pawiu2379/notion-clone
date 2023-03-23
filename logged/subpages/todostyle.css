@@ -135,9 +135,6 @@ form label {
     display: grid;
     grid-template-columns: 50% 50%;
 }
-.todo{
-
-}
 
 table td{
     padding: 5px ;

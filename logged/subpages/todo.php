@@ -33,6 +33,9 @@ error_reporting(E_ERROR | E_PARSE);
                         <option value="1">By date</option>
                         <option value="2">By status</option>
                     </select>
+                        <?php 
+                        $_SESSION['sort'] = $_POST['sort']
+                        ?>
                         <button class="button" type="submit"></button>
                 </label>
             </form>
@@ -58,7 +61,7 @@ error_reporting(E_ERROR | E_PARSE);
             <h1>Delete Task</h1>
             <label for="delete">Choose id task to delete:<br></label>
             <input type="number" name="delete" id="delete"><br>
-            <button type="submit" class="button" id="save-note" ><ion-icon name="save-outline"></ion-icon>&nbsp; Delete task</button>
+            <button type="submit" class="button" id="delete-task" ><ion-icon name="save-outline"></ion-icon>&nbsp; Delete task</button>
         </form>
     </section>
 </main>
