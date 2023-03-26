@@ -20,40 +20,40 @@ error_reporting(E_ERROR | E_PARSE);
             <li> <a href="todo.php">To do </a></li>
             <li> <a href="notes.php">Notes </a></li>
             <li> <a id="hello" style="text-align:center" >Hello <?php echo $_SESSION['username']?></a></li>
-            <li style="float: right"> <a>Search</a> </li>
+            <li style="float: right"> <a href="../index.php">Back to main</a> </li>
         </ul>
     </nav>
 </header>
 <main>
 <section id="todo_shortcut" class="shortcut">
             <h1>To Do</h1>
-            <form action="../subpages/todo.php" method="post" >
-                <label for="sort">
-                    <select name="sort" id="sort">Sort By:
-                        <option value="1">By date</option>
-                        <option value="2">By status</option>
-                    </select>
-                        <?php 
-                        $_SESSION['sort'] = $_POST['sort']
-                        ?>
-                        <button class="button" type="submit"></button>
-                </label>
-            </form>
+<!--            <form action="../subpages/todo.php" method="post" >-->
+<!--                <label for="sort">-->
+<!--                    <select name="sort" id="sort">Sort By:-->
+<!--                        <option value="1">By date</option>-->
+<!--                        <option value="2">By status</option>-->
+<!--                    </select>-->
+<!--                        --><?php //
+//                        $_SESSION['sort'] = $_POST['sort']
+//                        ?>
+<!--                        <button class="sort" type="submit"></button>-->
+<!--                </label>-->
+<!--            </form>-->
             <div class ="todo">
+                <form action="../functions/edit-task.php" method="post">
                 <?php include '../functions/todo.php'; ?>
-            </div>
-            <div>
-                <a href="../subpages/todo.php" class="button" id="open-tasks"><ion-icon name="copy-outline"></ion-icon></ion-icon></a>
+                <button type="submit"  class="button" id="open-tasks"> <ion-icon name="copy-outline"></ion-icon></ion-icon> Save</button>
+                </form>
             </div>
 </section>
     <section class="shortcut" id="actions">
         <form action="../functions/add-task.php" method="post">
             <h1>New Task</h1>
             <label for="task">Task
-                <textarea id="task"></textarea>
+                <textarea id="task" name="task"></textarea>
             </label>
             <label for="date"> End Date
-            <input type="date" id="date">
+            <input type="date" id="date" name="date">
             </label>
             <button type="submit" class="button"><ion-icon name="add-circle-outline"></ion-icon>Add new</button>
         </form>

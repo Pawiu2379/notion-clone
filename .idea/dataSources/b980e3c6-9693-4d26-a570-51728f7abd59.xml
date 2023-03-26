@@ -1154,10 +1154,10 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
     </schema>
     <schema id="328" parent="1" name="planer">
       <Current>1</Current>
-      <CollationName>utf8mb4_general_ci</CollationName>
+      <CollationName>utf8mb4_polish_ci</CollationName>
     </schema>
-    <schema id="329" parent="1" name="test">
-      <CollationName>latin1_swedish_ci</CollationName>
+    <schema id="329" parent="1" name="usernames">
+      <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <user id="330" parent="1" name="pma">
       <Host>localhost</Host>
@@ -1171,39 +1171,145 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
     <user id="333" parent="1" name="root">
       <Host>localhost</Host>
     </user>
-    <table id="334" parent="328" name="users">
+    <table id="334" parent="328" name="notepad">
       <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_general_ci</CollationName>
+      <CollationName>utf8mb4_polish_ci</CollationName>
     </table>
-    <column id="335" parent="334" name="id">
+    <table id="335" parent="328" name="tasks">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_polish_ci</CollationName>
+    </table>
+    <table id="336" parent="328" name="users">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_polish_ci</CollationName>
+    </table>
+    <column id="337" parent="334" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="336" parent="334" name="name">
+    <column id="338" parent="334" name="id_user">
+      <DasType>int(7)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="339" parent="334" name="title">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="340" parent="334" name="note">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="341" parent="334" name="notepad_ibfk_1">
+      <ColNames>id_user</ColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+      <RefColNames>id</RefColNames>
+      <RefTableName>users</RefTableName>
+    </foreign-key>
+    <index id="342" parent="334" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="343" parent="334" name="id_user">
+      <ColNames>id_user</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="344" parent="334" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="345" parent="335" name="id">
+      <AutoIncrement>16</AutoIncrement>
+      <DasType>int(7)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="346" parent="335" name="id_user">
+      <DasType>int(7)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="347" parent="335" name="task">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="348" parent="335" name="date">
+      <DasType>date|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="349" parent="335" name="status">
+      <DasType>tinyint(1)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <foreign-key id="350" parent="335" name="tasks_ibfk_1">
+      <ColNames>id_user</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>users</RefTableName>
+    </foreign-key>
+    <index id="351" parent="335" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="352" parent="335" name="id_user">
+      <ColNames>id_user</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="353" parent="335" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="354" parent="336" name="id">
+      <AutoIncrement>8</AutoIncrement>
+      <DasType>int(7)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="355" parent="336" name="name">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="337" parent="334" name="secondName">
-      <DasType>varchar(60)|0s</DasType>
+    <column id="356" parent="336" name="login">
+      <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="338" parent="334" name="login">
+    <column id="357" parent="336" name="password">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="339" parent="334" name="password">
+    <column id="358" parent="336" name="secondName">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="340" parent="334" name="number">
+    <column id="359" parent="336" name="number">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
+    <index id="360" parent="336" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="361" parent="336" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
   </database-model>
 </dataSource>

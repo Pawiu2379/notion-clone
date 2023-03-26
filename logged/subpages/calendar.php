@@ -20,7 +20,7 @@ error_reporting(E_ERROR | E_PARSE);
             <li> <a href="todo.php">To do </a></li>
             <li> <a href="notes.php">Notes </a></li>
             <li> <a id="hello" style="text-align:center" >Hello <?php echo $_SESSION['username']?></a></li>
-            <li style="float: right"> <a>Search</a> </li>
+            <li style="float: right"> <a href="../index.php">Back to main</a> </li>
         </ul>
     </nav>
 </header>

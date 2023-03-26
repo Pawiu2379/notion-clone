@@ -8,7 +8,9 @@ a {
     color: #333333;
     text-decoration: none;
 }
-
+#headtable {
+    border-bottom: 1px solid #111111 ;
+}
 a:hover {
     color: #555555;
 }
@@ -71,9 +73,10 @@ main {
 
 
 .todo {
-
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
-    display: grid;
 
 
 }
@@ -96,9 +99,10 @@ main {
 .button:hover {
     background-color: #dddddd;
 }
-
+#todo_shortcut{
+    display: inherit;
+}
 form{
-    display: inline-grid;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -130,7 +134,9 @@ form label {
     display: grid;
     width: 200px;
 }
-
+form{
+    display: inherit;
+}
 #actions{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -139,4 +145,35 @@ form label {
 table td{
     padding: 5px ;
     text-align: center  ;
+}
+
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    border: 2px solid #555555;
+    border-radius: 3px;
+    background-color: white;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
 }

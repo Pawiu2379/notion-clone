@@ -20,7 +20,7 @@
                 <li> <a href="subpages/todo.php">To do </a></li>
                 <li> <a href="subpages/notes.php">Notes </a></li>
                 <li> <a id="hello" style="text-align:center" >Hello <?php echo $_SESSION['username']?></a></li>
-                <li style="float: right"> <a>Search</a> </li>
+                <li style="float: right"><a href="../index.php">Logout</a> </li>
             </ul>
         </nav>
     </header>

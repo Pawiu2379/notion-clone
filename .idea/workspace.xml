@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d504e88-e085-4c79-8137-ca31f76c9f8c" name="Changes" comment="to do : script on sleect in todo.php">
+      <change afterPath="$PROJECT_DIR$/logged/functions/edit-task.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/b980e3c6-9693-4d26-a570-51728f7abd59.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b980e3c6-9693-4d26-a570-51728f7abd59.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logged/functions/todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/logged/functions/todo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logged/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/logged/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logged/subpages/calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/logged/subpages/calendar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logged/subpages/notes.php" beforeDir="false" afterPath="$PROJECT_DIR$/logged/subpages/notes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logged/subpages/todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/logged/subpages/todo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logged/subpages/todostyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/logged/subpages/todostyle.css" afterDir="false" />
     </list>
@@ -48,38 +52,34 @@
   </component>
   <component name="ProjectId" id="2Mzn3PSsEPLfjNpM1taLwslt63i" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TODO_SCOPE": "All Places",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/planerr",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "JavaScript.Libraries",
-    "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
-    ]
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/planerr&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;JavaScript.Libraries&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\notion-clone\logged\functions" />
@@ -124,7 +124,7 @@
       <workItem from="1679498567437" duration="320000" />
       <workItem from="1679499068224" duration="708000" />
       <workItem from="1679514341638" duration="4965000" />
-      <workItem from="1679303148305" duration="4930000" />
+      <workItem from="1679860811828" duration="6945000" />
     </task>
     <task id="LOCAL-00001" summary="first day of work">
       <created>1678783181116</created>
@@ -195,7 +195,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first day of work" />
-    <MESSAGE value="added style" />
     <MESSAGE value="next weekend with smth done" />
     <MESSAGE value="working notepad" />
     <MESSAGE value="subpages" />

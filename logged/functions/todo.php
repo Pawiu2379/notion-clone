@@ -1,7 +1,7 @@
 <?php
 try {
     $id = $_SESSION['id'];
-    $sort = $_SESSION['sortby']
+    $sort = $_SESSION['sortby'];
 
     $servername = 'localhost';
     $user = 'root';
@@ -28,15 +28,15 @@ try {
 
     if ($result->num_rows > 0) {
         echo "<table>";
-        echo "<tr><th>Id</th><th>Status</th><th>Task</th><th>Date</th></tr>";
+        echo "<tr style='border-bottom: 1px #000000 solid' id='headtable'><th>Id</th><th>Status</th><th>Task</th><th>Date</th></tr>";
 
         while($row = $result->fetch_assoc()) {
             echo "<tr>";
-            echo  "<td>". $row['id'] . "</td>";
+            echo  "<td id=".$row['id'].">". $row['id'] . "</td>";
             if ($row['status'] == 1){
-                echo "<td><label for='status'></label><input class='status' type='checkbox' name='status' value='" . $row["status"] . "' checked></td>";
+                echo "<td><label for='status'></label><input class='status' type='checkbox' name='status[]' value='" . $row["id"] . "' checked></td>";
             }else{
-                echo "<td><label for='status'></label><input class='status' type='checkbox' name='status' value='" . $row["status"] . "' ></td>";
+                echo "<td><label for='status'></label><input class='status' type='checkbox' name='status[]' value='" . $row["id"] . "' ></td>";
             }
             echo "<td>" . $row["task"] . "</td>";
             echo "<td>" . $row["date"] . "</td>";
