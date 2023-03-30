@@ -11,6 +11,8 @@ error_reporting(E_ERROR | E_PARSE);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./todo.js"></script>
 </head>
 <body>
 <header>
@@ -65,5 +67,7 @@ error_reporting(E_ERROR | E_PARSE);
         </form>
     </section>
 </main>
+
+
 </body>
 </html>

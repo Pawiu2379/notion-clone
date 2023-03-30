@@ -1184,7 +1184,7 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <CollationName>utf8mb4_polish_ci</CollationName>
     </table>
     <column id="337" parent="334" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>4</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1226,7 +1226,7 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="345" parent="335" name="id">
-      <AutoIncrement>16</AutoIncrement>
+      <AutoIncrement>17</AutoIncrement>
       <DasType>int(7)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>

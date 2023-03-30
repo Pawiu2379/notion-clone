@@ -34,7 +34,7 @@ try {
             echo "<tr>";
             echo  "<td id=".$row['id'].">". $row['id'] . "</td>";
             if ($row['status'] == 1){
-                echo "<td><label for='status'></label><input class='status' type='checkbox' name='status[]' value='" . $row["id"] . "' checked></td>";
+                echo "<td><label for='status'></label><input id=".$row['id']." class='status' type='checkbox' name='status[]' value='" . $row["id"] . "' checked></td>";
             }else{
                 echo "<td><label for='status'></label><input class='status' type='checkbox' name='status[]' value='" . $row["id"] . "' ></td>";
             }
