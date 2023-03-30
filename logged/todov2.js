@@ -19,10 +19,6 @@ $(document).ready(function() {
                     console.log(xhr.responseText);
                 }
             });
-
-
-
-
         }else{
             var checkboxValue = this.value
             query = `UPDATE tasks

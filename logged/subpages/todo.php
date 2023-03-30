@@ -29,22 +29,10 @@ error_reporting(E_ERROR | E_PARSE);
 <main>
 <section id="todo_shortcut" class="shortcut">
             <h1>To Do</h1>
-<!--            <form action="../subpages/todo.php" method="post" >-->
-<!--                <label for="sort">-->
-<!--                    <select name="sort" id="sort">Sort By:-->
-<!--                        <option value="1">By date</option>-->
-<!--                        <option value="2">By status</option>-->
-<!--                    </select>-->
-<!--                        --><?php //
-//                        $_SESSION['sort'] = $_POST['sort']
-//                        ?>
-<!--                        <button class="sort" type="submit"></button>-->
-<!--                </label>-->
-<!--            </form>-->
+
             <div class ="todo">
                 <form action="../functions/edit-task.php" method="post">
                 <?php include '../functions/todo.php'; ?>
-                <button type="submit"  class="button" id="open-tasks"> <ion-icon name="copy-outline"></ion-icon></ion-icon> Save</button>
                 </form>
             </div>
 </section>

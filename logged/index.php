@@ -40,7 +40,7 @@
         <section id="calendar_shortcut" class="shortcut">
             <h1>Calendar</h1>
             <div class="calendar " id="calendar">
-                <?php include 'functions/create-calendar.php' ?>
+<!--                --><?php //include 'functions/create-calendar.php' ?>
             </div>
             <div id="event">
 
