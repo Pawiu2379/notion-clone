@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d504e88-e085-4c79-8137-ca31f76c9f8c" name="Changes" comment="the end of doing this project">
+    <list default="true" id="8d504e88-e085-4c79-8137-ca31f76c9f8c" name="Changes" comment="style in todo subpage">
       <change afterPath="$PROJECT_DIR$/logged/functions/check.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logged/functions/todov2.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logged/subpages/todo.js" afterDir="false" />
@@ -13,7 +13,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_03_2023_09_56_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_03_2023_09_56__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logged/functions/todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/logged/functions/todo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logged/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/logged/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logged/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/logged/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logged/subpages/notesstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/logged/subpages/notesstyle.css" afterDir="false" />
@@ -37,14 +36,16 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/logged/script.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/logged/style.css" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/logged/subpages/calendarstyle.css" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/logged/subpages/notesstyle.css" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/logged/todov2.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/style.css" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -80,8 +81,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.obiscr.chatgpt.settings.ChatGPT&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.20795107&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;JavaScript.Libraries&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -129,16 +129,7 @@
       <workItem from="1679498567437" duration="320000" />
       <workItem from="1679499068224" duration="708000" />
       <workItem from="1679514341638" duration="4965000" />
-      <workItem from="1679860811828" duration="7460000" />
-      <workItem from="1679868461171" duration="149000" />
-      <workItem from="1679943447919" duration="682000" />
-      <workItem from="1680016010903" duration="268000" />
-      <workItem from="1680016301411" duration="2479000" />
-      <workItem from="1680027102834" duration="145000" />
-      <workItem from="1680104812548" duration="599000" />
-      <workItem from="1680112546152" duration="211000" />
-      <workItem from="1680124296220" duration="111000" />
-      <workItem from="1680156940800" duration="1730000" />
+      <workItem from="1679860811828" duration="6945000" />
     </task>
     <task id="LOCAL-00001" summary="first day of work">
       <created>1678783181116</created>
@@ -189,21 +180,7 @@
       <option name="project" value="LOCAL" />
       <updated>1679521806854</updated>
     </task>
-    <task id="LOCAL-00008" summary="the end of doing this project">
-      <created>1679868028260</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1679868028260</updated>
-    </task>
-    <task id="LOCAL-00009" summary="the end of doing this project">
-      <created>1679868063655</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1679868063655</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,8 +206,7 @@
     <MESSAGE value="styles for subpages" />
     <MESSAGE value="styles for subpages and note subpage ended" />
     <MESSAGE value="to do : script on sleect in todo.php" />
-    <MESSAGE value="the end of doing this project" />
-    <option name="LAST_COMMIT_MESSAGE" value="the end of doing this project" />
+    <option name="LAST_COMMIT_MESSAGE" value="to do : script on sleect in todo.php" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
